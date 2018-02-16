@@ -1,0 +1,10 @@
+create a java dynamic project and set it with apache tomcat.
+download the jersey jars and put all inside lib directory of web-inf.
+create jersey container. to do that need to initialize the servlet 'Jersey REST Service' with com.sun.jersey.spi.container.servlet.ServletContainer.
+along with this the resource java package also needs to initialize with <init-param>. where we put all the resources.
+after this setup, create a package which we declare inside web.xml and create one java class say 'HelloResource'.
+we need to use JSR-311 libs for annotations like @Path , @Get and so on.
+the class HelloResource is denoted with @Path("/hello").
+create one method name sayHello which will return the String "Hello Jersey".
+this method will be annotated with @Get annotation. Also it produces text so that we use @Produces(MediaType.TEXT_PLAIN).
+now run the server and open the browser to test it. http://localhost:8080/JerseyRestProject/rest/hello will return the Hello Jersey.

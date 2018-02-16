@@ -8,3 +8,5 @@ the class HelloResource is denoted with @Path("/hello").
 create one method name sayHello which will return the String "Hello Jersey".
 this method will be annotated with @Get annotation. Also it produces text so that we use @Produces(MediaType.TEXT_PLAIN).
 now run the server and open the browser to test it. http://localhost:8080/JerseyRestProject/rest/hello will return the Hello Jersey.
+
+reference : https://www.ibm.com/developerworks/web/library/wa-aj-tomcat/
